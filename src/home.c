@@ -5,7 +5,7 @@ void home()
     while(1)
     {
         int choice;
-        home();
+        menu();
         printf("请输入你的选择：");
         scanf("%d",&choice);
         switch (choice)
@@ -16,7 +16,7 @@ void home()
         case 2:
             print_score();
             break;
-        case 3:
+        /*case 3:
             search_score();
             break;
         case 4:
@@ -27,7 +27,7 @@ void home()
             break;
         case 6:
             sort_score();
-            break;
+            break; */
         case 0:
             exit_system();
             break;
@@ -35,6 +35,11 @@ void home()
         default:
             printf("输入错误，请重新输入\n");
             break;
+        }
+        if (choice==0)
+        {
+            break;
+            exit(0);
         }
     }
     
