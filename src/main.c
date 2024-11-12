@@ -1,6 +1,8 @@
 #include<stdio.h>
+#include "head.h"
 int main()
 {
-    menu();
+    home();
+    
     return 0;
 }
