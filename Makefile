@@ -1,6 +1,6 @@
 CC = gcc # 编译器为gcc
 CFLAGS = -g -Iinclude # 编译参数，包括调试信息和头文件路径
-OBJECTS = src/menu.o src/main.o src/add_score.o src/print_score.o src/exit_system.o src/home.o # 所有需要编译的目标文件
+OBJECTS =src/menu.o src/main.o src/add_score.o src/print_score.o src/exit_system.o src/home.o src/search_score.o # 所有需要编译的目标文件
 EXECUTABLE = system # 最终生成的可执行文件名
 HEADFILE = include/head.h # 公共头文件
 # 默认目标，依赖于$(EXECUTABLE)
@@ -26,6 +26,8 @@ src/add_score.o: src/add_score.c $(HEADFILE)
 src/exit_system.o:	src/exit_system.c $(HEADFILE)
 	$(CC) $(CFLAGS) -c src/exit_system.c -o src/exit_system.o
 		
+src/search_score.o: src/search_score.c $(HEADFILE)
+	$(CC) $(CFLAGS) -c src/search_score.c -o src/search_score.o		
 # src/main.o依赖于src/main.c和头文件
 src/main.o: src/main.c $(HEADFILE)
 	$(CC) $(CFLAGS) -c src/main.c -o src/main.o	

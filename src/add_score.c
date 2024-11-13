@@ -6,6 +6,9 @@ Node *g_head = NULL;
 
 void add_score()
 {
+    char continue_input;
+    do {
+    
     // 创建一个新节点，并为其分配内存
     Node *pNewNode = (Node *)malloc(sizeof(Node));
     if (pNewNode == NULL)
@@ -46,4 +49,7 @@ void add_score()
     scanf("%lf%lf%lf%lf", &pNewNode->stu.english, &pNewNode->stu.math, &pNewNode->stu.C_lang, &pNewNode->stu.sport); // 输入学生成绩
 
     printf("学生信息录入成功\n");
+    printf("是否继续录入学生信息？(y/n): ");
+    scanf(" %c", &continue_input); // 注意这里的空格，用于忽略前一个输入的换行符
+    } while (continue_input == 'y' || continue_input == 'Y');
 }

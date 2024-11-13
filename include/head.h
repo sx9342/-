@@ -1,6 +1,7 @@
 #ifndef HEAD_H
 #define HEAD_H
 #include<stdlib.h>
+#include<string.h>
 // 声明一个用于打印整数数组的函数
 void print_arr(int arr[], int size); 
 

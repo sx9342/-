@@ -2,6 +2,7 @@
 #include "head.h"
 void home()
 {
+    
     while(1)
     {
         int choice;
@@ -12,14 +13,18 @@ void home()
         {
         case 1:
             add_score();
+            printf("\n");
+            
             break;
         case 2:
             print_score();
+            printf("\n");
+            
             break;
-        /*case 3:
+        case 3:
             search_score();
             break;
-        case 4:
+      /*  case 4:
             modify_score();
             break;
         case 5:
