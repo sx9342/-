@@ -32,7 +32,7 @@ typedef struct tagNode
     struct tagNode *pNext;
 
 } Node; //和上面同理
-
+ 
 extern Node *g_head; // 全局变量，用于存储链表头节点的指针
 
 // 声明一个用于添加学生成绩信息的函数

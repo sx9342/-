@@ -24,10 +24,10 @@ void home()
         case 3:
             search_score();
             break;
-      /*  case 4:
+       case 4:
             modify_score();
             break;
-        case 5:
+      /*  case 5:
             delete_score();
             break;
         case 6:
