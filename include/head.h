@@ -2,11 +2,6 @@
 #define HEAD_H
 #include<stdlib.h>
 #include<string.h>
-// 声明一个用于打印整数数组的函数
-void print_arr(int arr[], int size); 
-
-// 声明一个用于打印字符串的函数
-void print_str(char *str);
 
 // 声明一个名为home的函数，用途待补充
 void home();
